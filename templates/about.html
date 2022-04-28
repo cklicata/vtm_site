@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}About{% endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+
 </head>
-<body>
+<body> 
     <div>
-        <h1>About Vertical Tank Maintenance</h1>
+       <h1>Vertical Tank Maintenance</h1>
+        <a href="index.html"><button>Home</button> </a>
+       <a href="about.html"><button> About</button></a>
+       <a href="estimate.html"><button>Estimate</button></a>
+       <br>
+       <h2> About Vertical Tank Maintenance</h2>
         <hr>
         <br>
-        
         {% block body %} 
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Sagittis id consectetur purus ut. Sit amet est placerat in egestas erat imperdiet. Ornare suspendisse sed nisi lacus. At tempor commodo ullamcorper a lacus vestibulum sed arcu. Elementum sagittis vitae et leo duis ut diam quam nulla. Ac tincidunt vitae semper quis. Mauris rhoncus aenean vel elit scelerisque. Semper eget duis at tellus at urna condimentum. Aliquam faucibus purus in massa tempor nec feugiat.
-        <br></br>
+        <br>
         Sit amet nisl suscipit adipiscing bibendum est ultricies. Ornare arcu dui vivamus arcu felis bibendum ut. In eu mi bibendum neque. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Eu lobortis elementum nibh tellus molestie nunc. Suspendisse interdum consectetur libero id. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Viverra nibh cras pulvinar mattis. Fringilla urna porttitor rhoncus dolor purus non enim. Pellentesque id nibh tortor id. Nunc faucibus a pellentesque sit amet porttitor eget dolor. Pellentesque id nibh tortor id aliquet. Nulla pellentesque dignissim enim sit amet venenatis urna cursus. Morbi tincidunt ornare massa eget egestas purus viverra. At in tellus integer feugiat scelerisque varius morbi enim. Tempus quam pellentesque nec nam aliquam sem et. Porttitor lacus luctus accumsan tortor posuere.
-        <br></br>
+        <br>
         Tellus pellentesque eu tincidunt tortor aliquam nulla. Eget sit amet tellus cras adipiscing enim eu turpis egestas. Lacus viverra vitae congue eu consequat ac. Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Lacus viverra vitae congue eu consequat ac felis donec et. Nullam eget felis eget nunc lobortis mattis aliquam. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Tempus imperdiet nulla malesuada pellentesque. Leo duis ut diam quam nulla porttitor. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Massa sed elementum tempus egestas sed sed risus pretium. Sem integer vitae justo eget magna fermentum. Non arcu risus quis varius quam quisque id. Facilisis volutpat est velit egestas dui. Nec feugiat in fermentum posuere urna nec. Eget magna fermentum iaculis eu non diam phasellus vestibulum. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Aliquam sem et tortor consequat id porta nibh. Velit egestas dui id ornare. Egestas maecenas pharetra convallis posuere morbi.
-        <br></br>
+        <br>
         Elit ullamcorper dignissim cras tincidunt. Proin sagittis nisl rhoncus mattis. Arcu ac tortor dignissim convallis aenean. Porttitor lacus luctus accumsan tortor posuere ac. Cursus metus aliquam eleifend mi in nulla. Gravida quis blandit turpis cursus in hac. Tellus in metus vulputate eu. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Consectetur adipiscing elit ut aliquam. Fusce id velit ut tortor pretium viverra suspendisse potenti. Pharetra convallis posuere morbi leo urna molestie at elementum. Non arcu risus quis varius.
-        {% endblock %}
+        <br> {% endblock %}
 
     </div>
 </body>
