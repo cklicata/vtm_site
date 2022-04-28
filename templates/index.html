@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock%}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+</head>>
 <body>
     <div>
         <h1>Vertical Tank Maintenance</h1>
@@ -13,12 +17,8 @@
         <h2> Welcome to VTM!</h2>
         <br>
         <img src="../images/above_ground_vertical_tanks.jpg"/>
-        
-        {% block body %} 
+        <br>
         <hr>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-        {% endblock %}
-
     </div>
 </body>
 </html>
