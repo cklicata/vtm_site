@@ -15,23 +15,25 @@ def about():
 def estimate():
     return return_template('estimate.html', pageTitle= "Estimating VTM")
 
+@app.route('/calculate', methods=['POST'])
 def calculate():
-    radius=request.form['radius']
-    height=request.form['height']
-    radius=float(radius)
-    height=float(height)
-    pi=3.14
+    if request.method=='POST':
+        radius=request.form['radius']
+        height=request.form['height']
+        radius=float(radius)
+        height=float(height)
+        pi=3.14
 
 
-    tanktop_area=(radius*radius)*pi
-    tanksides_area=(2*(pi*(radius*height)))
-    total_area=tanksides_area+tanktop_area
-    area_sqft=total_area/144
-    material_cost=area_sqft*25
-    labor_cost=area_sqft*15
-    total_cost=material_cost+labor_cost
-    print("Total Cost Estimate: $")
-    
+        tanktop_area=(radius*radius)*pi
+        tanksides_area=(2*(pi*(radius*height)))
+        total_area=tanksides_area+tanktop_area
+        area_sqft=total_area/144
+        material_cost=area_sqft*25
+        labor_cost=area_sqft*15
+        total_cost=material_cost+labor_cost
+        print("Total Cost Estimate: $")
+        return(total_cost)
     return render_template('estimate.html',
         total_cost=total_cost)
     
